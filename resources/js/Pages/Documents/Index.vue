@@ -72,7 +72,7 @@ const hapus = (id) => {
   v-model="kategori"
   class="w-full sm:w-48 rounded-lg border-gray-300 text-sm"
 >
-  <option value="">Semua Kategori</option>
+  <option value="">Semua Departemen</option>
   <option
     v-for="item in kategoriList"
     :key="item"
@@ -126,7 +126,7 @@ dari
                     <th class="px-4 py-3">No</th>
                     <th class="px-4 py-3">Nomor Dokumen</th>
                     <th class="px-4 py-3">Judul</th>
-                    <th class="px-4 py-3">Kategori</th>
+                    <th class="px-4 py-3">Departemen</th>
                     <th class="px-4 py-3">Aksi</th>
                   </tr>
                 </thead>

@@ -49,7 +49,7 @@ const submit = () => {
             </div>
 
             <div>
-              <label class="text-sm text-gray-600">Kategori</label>
+              <label class="text-sm text-gray-600">Departemen</label>
               <input v-model="form.kategori" class="mt-1 w-full rounded-lg border-gray-300" />
             </div>
 

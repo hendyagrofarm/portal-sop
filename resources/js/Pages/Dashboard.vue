@@ -41,7 +41,7 @@ const props = defineProps({
           </div>
 
           <div class="rounded-xl bg-white p-5 shadow-sm ring-1 ring-gray-100">
-            <div class="text-sm text-gray-500">Total Kategori</div>
+            <div class="text-sm text-gray-500">Total Departemen</div>
             <div class="mt-2 text-3xl font-semibold text-gray-900">
               {{ stats.totalCategories }}
             </div>
@@ -84,7 +84,7 @@ const props = defineProps({
                   <tr>
                     <th class="px-4 py-3">Nomor</th>
                     <th class="px-4 py-3">Judul</th>
-                    <th class="px-4 py-3">Kategori</th>
+                    <th class="px-4 py-3">Departemen</th>
                     <th class="px-4 py-3">Update</th>
                     <th class="px-4 py-3">Aksi</th>
                   </tr>
@@ -116,13 +116,13 @@ const props = defineProps({
         <!-- TOP CATEGORY -->
         <div class="rounded-xl bg-white shadow-sm ring-1 ring-gray-100">
           <div class="border-b border-gray-100 p-5">
-            <h3 class="text-base font-semibold text-gray-800">Kategori Terbanyak</h3>
-            <p class="mt-1 text-sm text-gray-500">Top 8 kategori berdasarkan jumlah dokumen</p>
+            <h3 class="text-base font-semibold text-gray-800">Departemen Terbanyak</h3>
+            <p class="mt-1 text-sm text-gray-500">Top 8 departemen berdasarkan jumlah dokumen</p>
           </div>
 
           <div class="p-5">
             <div v-if="!categoryBreakdown.length" class="text-sm text-gray-500">
-              Belum ada kategori.
+              Belum ada departemen.
             </div>
 
             <div v-else class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
