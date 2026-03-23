@@ -12,5 +12,12 @@ class Document extends Model
         'kategori',
         'deskripsi',
         'file_url',
+        'status',
+        'revoked_at',
+        'revoked_reason',
+    ];
+
+    protected $casts = [
+    'revoked_at' => 'datetime',
     ];
 }
