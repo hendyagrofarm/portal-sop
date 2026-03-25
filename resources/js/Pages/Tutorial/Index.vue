@@ -59,8 +59,7 @@ const isAdmin = computed(() => page.props.auth?.user?.role === 'admin')
               <p class="mt-3 text-sm leading-7 text-slate-600">
                 Portal SOP adalah sistem internal untuk mengelola dan mengakses dokumen
                 Standar Operasional Prosedur, Instruksi Kerja, Formulir, dan dokumen terkait.
-                Sistem ini menyimpan <span class="font-semibold text-slate-800">link dokumen</span>
-                (Drive/URL), sehingga pengguna dapat membuka dokumen langsung dari portal.
+                Sehingga pengguna dapat membuka dokumen langsung dari portal.
               </p>
               <p class="mt-3 text-sm leading-7 text-slate-600">
                 Hak akses dibedakan berdasarkan peran pengguna:
@@ -80,7 +79,7 @@ const isAdmin = computed(() => page.props.auth?.user?.role === 'admin')
         </section>
 
         <!-- QUICK OVERVIEW -->
-        <section class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <section class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           <div class="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
             <div class="text-sm font-medium text-slate-500">Akses Umum</div>
             <div class="mt-3 text-lg font-bold text-slate-900">Buka Dokumen</div>
@@ -105,13 +104,6 @@ const isAdmin = computed(() => page.props.auth?.user?.role === 'admin')
             </p>
           </div>
 
-          <div class="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-            <div class="text-sm font-medium text-slate-500">Riwayat</div>
-            <div class="mt-3 text-lg font-bold text-slate-900">Pulihkan SOP</div>
-            <p class="mt-2 text-sm text-slate-500">
-              SOP yang dicabut dapat dikembalikan ke status aktif oleh admin.
-            </p>
-          </div>
         </section>
 
         <!-- JENIS DOKUMEN -->
@@ -362,50 +354,6 @@ const isAdmin = computed(() => page.props.auth?.user?.role === 'admin')
               <p class="mt-2 text-sm leading-7 text-slate-600">
                 Dokumen tidak lagi tampil di daftar aktif, tetapi tetap tersimpan
                 sebagai histori untuk kebutuhan audit dan pelacakan.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- PULIHKAN SOP -->
-        <section class="rounded-3xl bg-white shadow-sm ring-1 ring-slate-200">
-          <div class="border-b border-slate-200 px-6 py-4">
-            <h3 class="text-xl font-bold text-slate-900">
-              Cara Memulihkan SOP
-            </h3>
-            <p class="mt-1 text-sm text-slate-500">
-              Digunakan jika dokumen ingin diaktifkan kembali
-            </p>
-          </div>
-
-          <div class="space-y-4 px-6 py-6">
-            <div class="rounded-2xl bg-blue-50 p-5 ring-1 ring-blue-100">
-              <div class="text-sm font-semibold text-blue-700">Langkah 1</div>
-              <div class="mt-2 text-base font-bold text-slate-900">
-                Buka menu Histori SOP
-              </div>
-              <p class="mt-2 text-sm leading-7 text-slate-600">
-                Masuk ke daftar dokumen yang sudah dicabut.
-              </p>
-            </div>
-
-            <div class="rounded-2xl bg-blue-50 p-5 ring-1 ring-blue-100">
-              <div class="text-sm font-semibold text-blue-700">Langkah 2</div>
-              <div class="mt-2 text-base font-bold text-slate-900">
-                Klik tombol “Pulihkan”
-              </div>
-              <p class="mt-2 text-sm leading-7 text-slate-600">
-                Tombol ini hanya tersedia untuk admin.
-              </p>
-            </div>
-
-            <div class="rounded-2xl bg-blue-50 p-5 ring-1 ring-blue-100">
-              <div class="text-sm font-semibold text-blue-700">Langkah 3</div>
-              <div class="mt-2 text-base font-bold text-slate-900">
-                Dokumen kembali ke daftar aktif
-              </div>
-              <p class="mt-2 text-sm leading-7 text-slate-600">
-                Setelah dipulihkan, dokumen akan muncul kembali di halaman dokumen aktif.
               </p>
             </div>
           </div>

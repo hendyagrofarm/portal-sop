@@ -111,8 +111,8 @@ const submitDelete = () => {
               Dokumen Portal SOP
             </h2>
             <p class="mt-2 max-w-2xl text-sm leading-6 text-white/85">
-              Sistem untuk mengelola dokumen aktif, pencarian SOP,
-              dan distribusi dokumen per departemen secara lebih rapi dan profesional.
+              Sistem terpusat untuk mengelola dokumen aktif, memudahkan pencarian SOP,
+              serta mendukung distribusi dokumen lintas departemen secara sistematis dan profesional.
             </p>
           </div>
 
@@ -353,12 +353,7 @@ const submitDelete = () => {
           </div>
         </section>
 
-        <!-- INFO -->
-        <section class="rounded-3xl bg-white px-6 py-4 text-sm text-slate-500 shadow-sm ring-1 ring-slate-200">
-          Dokumen hanya menyimpan link file (Drive/URL). Tombol
-          <span class="font-semibold text-slate-700">Buka</span>
-          akan mengarahkan user ke link dokumen terkait.
-        </section>
+
       </div>
     </div>
 
